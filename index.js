@@ -22,3 +22,17 @@ console.log(sc.minHeight() );
 console.log(sc.draw(3, 2) );
 // → ["abc", "   "]
 
+
+var logFive = require('log-five.js'),
+    ArraySeq = require('array-sequence.js'),
+    RangeSeq = require('range-sequence.js');
+console.log('\n\nSequence Inteface:');
+logFive(new ArraySeq([1, 2]));
+// → 1
+// → 2
+logFive(new RangeSeq(100, 1000));
+// → 100
+// → 101
+// → 102
+// → 103
+// → 104
